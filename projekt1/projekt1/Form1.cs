@@ -1,4 +1,4 @@
-namespace projekt1
+﻿namespace projekt1
 {
     public partial class Form1 : Form
     {
@@ -167,5 +167,55 @@ namespace projekt1
                 this.textBox1.Text = this.textBox1.Text.Remove(0, 1);
             }
         }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void skórka1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem menuItem = (ToolStripMenuItem)sender;
+
+            if (menuItem.Checked) { 
+                this.BackgroundImage = Image.FromFile("C:/Users/User/Source/Repos/project1/projekt1/projekt1/Resources/pexels-eberhard-grossgasteiger-1287142.jpg");
+                this.skórka2ToolStripMenuItem.CheckState = CheckState.Unchecked;
+                this.skórka3ToolStripMenuItem.CheckState = CheckState.Unchecked;
+
+            }
+
+
+
+
+        }
+
+        private void skórka2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem menuItem = (ToolStripMenuItem)sender;
+
+            if (menuItem.Checked) { 
+                this.BackgroundImage = Image.FromFile("C:/Users/User/Desktop/projectsPOSK/skorka2.jpg");
+                this.skórka1ToolStripMenuItem.CheckState = CheckState.Unchecked;
+                this.skórka3ToolStripMenuItem.CheckState = CheckState.Unchecked;
+            }
+        }
+
+        private void skórka3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem menuItem = (ToolStripMenuItem)sender;
+
+            if (menuItem.Checked) { 
+                this.BackgroundImage = Image.FromFile("C:/Users/User/Desktop/projectsPOSK/skorka3.png");
+                this.skórka2ToolStripMenuItem.CheckState = CheckState.Unchecked;
+                this.skórka1ToolStripMenuItem.CheckState = CheckState.Unchecked;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.label1.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
+
+        
     }
 }

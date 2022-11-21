@@ -30,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -51,11 +52,19 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.skórka1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skórka2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skórka3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(10, 257);
+            this.button1.Location = new System.Drawing.Point(9, 303);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 63);
@@ -66,7 +75,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(75, 257);
+            this.button2.Location = new System.Drawing.Point(74, 303);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 63);
@@ -77,7 +86,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(141, 257);
+            this.button3.Location = new System.Drawing.Point(140, 303);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 64);
@@ -88,7 +97,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(10, 329);
+            this.button4.Location = new System.Drawing.Point(9, 375);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 61);
@@ -99,7 +108,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(75, 329);
+            this.button5.Location = new System.Drawing.Point(74, 375);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(58, 60);
@@ -110,7 +119,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(141, 329);
+            this.button6.Location = new System.Drawing.Point(140, 375);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(58, 61);
@@ -121,7 +130,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(10, 399);
+            this.button7.Location = new System.Drawing.Point(9, 445);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(58, 61);
@@ -132,7 +141,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(75, 399);
+            this.button8.Location = new System.Drawing.Point(74, 445);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(58, 61);
@@ -143,7 +152,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(141, 399);
+            this.button9.Location = new System.Drawing.Point(140, 445);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(58, 61);
@@ -154,7 +163,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(75, 468);
+            this.button10.Location = new System.Drawing.Point(74, 514);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(58, 61);
@@ -165,7 +174,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(206, 124);
+            this.button11.Location = new System.Drawing.Point(205, 170);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(58, 61);
@@ -176,7 +185,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(206, 191);
+            this.button12.Location = new System.Drawing.Point(205, 237);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(58, 61);
@@ -187,7 +196,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(206, 257);
+            this.button13.Location = new System.Drawing.Point(205, 303);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(58, 64);
@@ -198,7 +207,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(206, 399);
+            this.button14.Location = new System.Drawing.Point(205, 445);
             this.button14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(58, 61);
@@ -209,7 +218,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(206, 468);
+            this.button15.Location = new System.Drawing.Point(205, 514);
             this.button15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(58, 61);
@@ -220,7 +229,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(141, 124);
+            this.button16.Location = new System.Drawing.Point(140, 170);
             this.button16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(58, 61);
@@ -232,7 +241,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(10, 208);
+            this.textBox1.Location = new System.Drawing.Point(9, 254);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(190, 41);
@@ -240,7 +249,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(10, 468);
+            this.button17.Location = new System.Drawing.Point(9, 514);
             this.button17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(58, 61);
@@ -251,7 +260,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(141, 468);
+            this.button18.Location = new System.Drawing.Point(140, 514);
             this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(58, 61);
@@ -262,7 +271,7 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(75, 124);
+            this.button19.Location = new System.Drawing.Point(74, 170);
             this.button19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(58, 61);
@@ -273,7 +282,7 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(206, 329);
+            this.button20.Location = new System.Drawing.Point(205, 375);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(58, 61);
@@ -282,11 +291,72 @@
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(278, 28);
+            this.menuStrip1.TabIndex = 21;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.skórka1ToolStripMenuItem,
+            this.skórka2ToolStripMenuItem,
+            this.skórka3ToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(123, 24);
+            this.toolStripMenuItem1.Text = "Wybierz skórkę";
+            // 
+            // skórka1ToolStripMenuItem
+            // 
+            this.skórka1ToolStripMenuItem.CheckOnClick = true;
+            this.skórka1ToolStripMenuItem.Name = "skórka1ToolStripMenuItem";
+            this.skórka1ToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.skórka1ToolStripMenuItem.Text = "Fiolet";
+            this.skórka1ToolStripMenuItem.Click += new System.EventHandler(this.skórka1ToolStripMenuItem_Click);
+            // 
+            // skórka2ToolStripMenuItem
+            // 
+            this.skórka2ToolStripMenuItem.CheckOnClick = true;
+            this.skórka2ToolStripMenuItem.Name = "skórka2ToolStripMenuItem";
+            this.skórka2ToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.skórka2ToolStripMenuItem.Text = "Niebo";
+            this.skórka2ToolStripMenuItem.Click += new System.EventHandler(this.skórka2ToolStripMenuItem_Click);
+            // 
+            // skórka3ToolStripMenuItem
+            // 
+            this.skórka3ToolStripMenuItem.CheckOnClick = true;
+            this.skórka3ToolStripMenuItem.Name = "skórka3ToolStripMenuItem";
+            this.skórka3ToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.skórka3ToolStripMenuItem.Text = "Gradient";
+            this.skórka3ToolStripMenuItem.Click += new System.EventHandler(this.skórka3ToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(17, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 31);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 533);
+            this.ClientSize = new System.Drawing.Size(278, 583);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
@@ -308,9 +378,12 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +412,12 @@
         private Button button18;
         private Button button19;
         private Button button20;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem skórka1ToolStripMenuItem;
+        private ToolStripMenuItem skórka2ToolStripMenuItem;
+        private ToolStripMenuItem skórka3ToolStripMenuItem;
+        private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
