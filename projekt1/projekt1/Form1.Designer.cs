@@ -5,9 +5,17 @@
         /// <summary>
         ///  Required designer variable.
         /// </summary>
+        /// 
         private System.ComponentModel.IContainer components = null;
         double result;
         string lastCommand = "";
+        
+ 
+
+
+        
+
+        
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -57,9 +65,14 @@
             this.skórka1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skórka2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skórka3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wybierzZegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cyfrowyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analogowyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -295,12 +308,14 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
+            this.toolStripMenuItem1,
+            this.wybierzZegarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(278, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(599, 28);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // toolStripMenuItem1
             // 
@@ -336,26 +351,61 @@
             this.skórka3ToolStripMenuItem.Text = "Gradient";
             this.skórka3ToolStripMenuItem.Click += new System.EventHandler(this.skórka3ToolStripMenuItem_Click);
             // 
+            // wybierzZegarToolStripMenuItem
+            // 
+            this.wybierzZegarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cyfrowyToolStripMenuItem,
+            this.analogowyToolStripMenuItem});
+            this.wybierzZegarToolStripMenuItem.Name = "wybierzZegarToolStripMenuItem";
+            this.wybierzZegarToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.wybierzZegarToolStripMenuItem.Text = "Wybierz zegar";
+            // 
+            // cyfrowyToolStripMenuItem
+            // 
+            this.cyfrowyToolStripMenuItem.Name = "cyfrowyToolStripMenuItem";
+            this.cyfrowyToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.cyfrowyToolStripMenuItem.Text = "Cyfrowy";
+            this.cyfrowyToolStripMenuItem.Click += new System.EventHandler(this.cyfrowyToolStripMenuItem_Click);
+            // 
+            // analogowyToolStripMenuItem
+            // 
+            this.analogowyToolStripMenuItem.Name = "analogowyToolStripMenuItem";
+            this.analogowyToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.analogowyToolStripMenuItem.Text = "Analogowy";
+            this.analogowyToolStripMenuItem.Click += new System.EventHandler(this.analogowyToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(17, 86);
+            this.label1.Location = new System.Drawing.Point(394, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 31);
             this.label1.TabIndex = 22;
             this.label1.Text = "label1";
+            this.label1.Visible = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(269, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(318, 361);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 583);
+            this.ClientSize = new System.Drawing.Size(599, 583);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
@@ -382,8 +432,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,5 +471,9 @@
         private ToolStripMenuItem skórka3ToolStripMenuItem;
         private Label label1;
         private System.Windows.Forms.Timer timer1;
+        private ToolStripMenuItem wybierzZegarToolStripMenuItem;
+        private ToolStripMenuItem cyfrowyToolStripMenuItem;
+        private ToolStripMenuItem analogowyToolStripMenuItem;
+        private PictureBox pictureBox1;
     }
 }
