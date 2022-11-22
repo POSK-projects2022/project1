@@ -119,33 +119,163 @@ namespace projekt1
         private void button12_Click(object sender, EventArgs e)
         {
             Button b_plus = (Button)sender;
-            this.result += Convert.ToDouble(this.textBox1.Text);
-            this.lastCommand = "+";
-            this.textBox1.Text = "";
+            if (this.lastCommand == "+")
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "+";
+            }
+            else if (this.lastCommand == "-")
+            {
+                this.result -= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "+";
+
+            }
+            else if (this.lastCommand == "*")
+            {
+                this.result *= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "+";
+
+            }
+            else if (this.lastCommand == "/")
+            {
+                this.result /= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "+";
+
+            } else
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.lastCommand = "+";
+                this.textBox1.Text = "";
+
+            }
+                
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             Button b_minus = (Button)sender;
-            this.result += Convert.ToDouble(this.textBox1.Text);
-            this.lastCommand = "-";
-            this.textBox1.Text = "";
+            if (this.lastCommand == "+")
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "-";
+            }
+            else if (this.lastCommand == "-")
+            {
+                this.result -= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "-";
+
+            }
+            else if (this.lastCommand == "*")
+            {
+                this.result *= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "-";
+
+            }
+            else if (this.lastCommand == "/")
+            {
+                this.result /= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "-";
+
+            } else
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.lastCommand = "-";
+                this.textBox1.Text = "";
+            }
+            
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             Button b_mult = (Button)sender;
-            this.result += Convert.ToDouble(this.textBox1.Text);
-            this.lastCommand = "*";
-            this.textBox1.Text = "";
+            if (this.lastCommand == "+")
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "*";
+            }
+            else if (this.lastCommand == "-")
+            {
+                this.result -= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "*";
+
+
+            }
+            else if (this.lastCommand == "*")
+            {
+                this.result *= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "*";
+
+
+            }
+            else if (this.lastCommand == "/")
+            {
+                this.result /= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "*";
+
+
+            }
+            else
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.lastCommand = "*";
+                this.textBox1.Text = "";
+            }
+            
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             Button b_divide = (Button)sender;
-            this.result += Convert.ToDouble(this.textBox1.Text);
-            this.lastCommand = "/";
-            this.textBox1.Text = "";
+            if (this.lastCommand == "+")
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "/";
+
+            }
+            else if (this.lastCommand == "-")
+            {
+                this.result -= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "/";
+
+
+            }
+            else if (this.lastCommand == "*")
+            {
+                this.result *= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "/";
+
+
+            }
+            else if (this.lastCommand == "/")
+            {
+                this.result /= Convert.ToDouble(this.textBox1.Text);
+                this.textBox1.Text = "";
+                this.lastCommand = "/";
+
+
+            }
+            else
+            {
+                this.result += Convert.ToDouble(this.textBox1.Text);
+                this.lastCommand = "/";
+                this.textBox1.Text = "";
+            }
+            
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -158,7 +288,7 @@ namespace projekt1
         private void button11_Click(object sender, EventArgs e)
         {
             Button b_X = (Button)sender;
-            this.textBox1.Text = this.textBox1.Text.Remove(this.textBox1.Text.Length - 1, 1); // nie dziala
+            this.textBox1.Text = this.textBox1.Text.Remove(this.textBox1.Text.Length - 1, 1); 
         }
 
         private void button19_Click(object sender, EventArgs e)
